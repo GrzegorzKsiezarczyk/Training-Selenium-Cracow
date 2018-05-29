@@ -7,5 +7,7 @@ public class testowo {
 	public static void main(String[] args) {
 		WebDriver driver =new SafariDriver();
 		driver.get("http://www.google.com");
+		System.out.println("testowa zmiana");
+	
 	}
 }
