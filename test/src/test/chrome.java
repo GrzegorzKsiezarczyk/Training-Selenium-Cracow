@@ -32,9 +32,13 @@ public class chrome {
 
         //Find first name text box by CSS Selector
         driver1.navigate().to("https://www.linkedin.com/");
-        WebElement firstNameTextBox = driver1.findElement(By.cssSelector("#first-name"));
+        WebElement firstNameTextBox = driver1.findElement(By.cssSelector(".reg-firstname"));
         firstNameTextBox.click();
+        firstNameTextBox.sendKeys("Grzegorz");
         
+        WebElement SurNameTextBox = driver1.findElement(By.xpath("//*[@id='reg-lastname']"));
+        SurNameTextBox.click();
+        SurNameTextBox.sendKeys("Księciu");
         
         
         
